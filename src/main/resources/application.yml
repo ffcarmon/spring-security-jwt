@@ -1,0 +1,28 @@
+#https://www.youtube.com/watch?v=-Z4a0bKr2Pg
+server:
+  port: 8081
+
+application:
+  security:
+    jwt:
+      #https://jwtsecret.com/
+      #https://generate-random.org/encryption-key-generator
+      secret-key: MbSm+cbkvS7Mo9V/ingpKv6Gtfj6E9ZD5DvSTszDslEoLYxJNGNPBlo9bD83kJOc
+      expiration: 86400000 #1 day
+      refresh-token:
+        expiration: 604800000 #7 days
+spring:
+  application:
+    name: spring-security-jwt
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    #POSTGRES_PASSWORD=mypassword
+    password: mypassword
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
