@@ -1,4 +1,7 @@
 package com.cloudforge.mytoken.auth.controller;
 
-public class LoginRequest {
-}
+public record LoginRequest(
+        String email,
+        String password
+) {
+    }

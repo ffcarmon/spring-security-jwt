@@ -1,4 +1,6 @@
 package com.cloudforge.mytoken.user;
 
-public class UserRepository {
+import org.springframework.data.repository.CrudRepository;
+
+public interface UserRepository extends CrudRepository<User, Long> {
 }
