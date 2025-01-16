@@ -1,4 +1,7 @@
 package com.cloudforge.mytoken.user;
 
-public class UserResponse {
+public record UserResponse (
+        String name,
+        String email
+) {
 }

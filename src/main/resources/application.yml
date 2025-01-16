@@ -1,4 +1,7 @@
 #https://www.youtube.com/watch?v=-Z4a0bKr2Pg
+
+#https://www.youtube.com/watch?v=jfKfPfyJRdk
+
 server:
   port: 8081
 
@@ -17,12 +20,9 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
-    #POSTGRES_PASSWORD=mypassword
+    #To Config variable in Docker Container: POSTGRES_PASSWORD=mypassword
     password: mypassword
   jpa:
     hibernate:
       ddl-auto: create-drop
-#    properties:
-#      hibernate:
-#        dialect: org.hibernate.dialect.PostgreSQLDialect
-    show-sql: true
+    show-sql: false

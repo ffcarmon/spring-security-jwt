@@ -1,0 +1,21 @@
+POST http://127.0.0.1:8081/auth/register
+{
+    "name": "Some New User",
+    "email": "somenewuser@gmail.com",
+    "password": "password123"
+}
+
+POST http://127.0.0.1:8081/auth/login
+{
+    "email": "somenewuser@gmail.com",
+    "password": "password123"
+}
+
+POST http://127.0.0.1:8081/auth/logout
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJqdGkiOiIxIiwibmFtZSI6IkZyYW5jaXNjbyIsInN1YiI6ImZyYW5jaXNjb0BnbWFpbC5jb20iLCJpYXQiOjE3MzcwNTU4NTcsImV4cCI6MTczNzE0MjI1N30.CYG-7dvZI4I6KsWxi0UyD7NuZMkm3g_iZljql40fxJ_UhbepDzjG81UB5O8lvu4I
+
+POST http://localhost:8081/auth/refresh
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJqdGkiOiIxIiwibmFtZSI6IkZyYW5jaXNjbyIsInN1YiI6ImZyYW5jaXNjb0BnbWFpbC5jb20iLCJpYXQiOjE3MzcwNTU4NTcsImV4cCI6MTczNzE0MjI1N30.CYG-7dvZI4I6KsWxi0UyD7NuZMkm3g_iZljql40fxJ_UhbepDzjG81UB5O8lvu4I
+
+GET http://127.0.0.1:8081/users
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJqdGkiOiIxIiwibmFtZSI6IkZyYW5jaXNjbyIsInN1YiI6ImZyYW5jaXNjb0BnbWFpbC5jb20iLCJpYXQiOjE3MzcwNTI5NDgsImV4cCI6MTczNzEzOTM0OH0.qvNNWrYGb2h86XytUM7dRT3D_weKkWNZ49Q1d2XvWbaZMxMjkLCCl6lFbJ_6BEO2
